@@ -1,9 +1,16 @@
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans");
+@import url("https://use.fontawesome.com/releases/v5.8.1/css/all.css");
+
 .App {
   text-align: center;
+  font-family: "Fira Sans", sans-serif;
+  width: 100vw;
 }
 
 .App-logo {
+  animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
+  pointer-events: none;
 }
 
 .App-header {
@@ -18,5 +25,157 @@
 }
 
 .App-link {
-  color: #09d3ac;
+  color: #61dafb;
 }
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.nav-bar {
+  display: flex;
+  height: 60px;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.links {
+  text-align: left;
+}
+a {
+  font-size: 20px;
+  margin: 10px 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.logo {
+  margin-right: 20px;
+  text-align: right;
+  color: #e50914;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.header {
+  text-align: center;
+  color: white;
+}
+
+.page-container {
+  height: calc(100vh - 60px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.users {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.box {
+  display: flex;
+  height: 150px;
+  width: 200px;
+  background-color: #e50914;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.users a {
+  text-decoration: none;
+}
+
+input {
+  font-size: 20px;
+  font-family: "Fira Sans", sans-serif;
+  border: none;
+  border-bottom: 2px solid #211f1f;
+  background-color: #080808;
+  padding-left: 10px;
+  height: 40px;
+  width: 100%;
+  color: #d6d1d1;
+  border-radius: 10px;
+  outline: none;
+}
+
+.search-container .hello-user, .budget {
+  color: #d6d1d1;
+  padding-right: 10px; 
+  font-size: 20px;
+  margin: 20px;
+}
+
+.search-container div {
+  width: 30%;
+}
+
+.user-name {
+  font-size: 30px;
+  font-weight: bold;
+  color: #353333;
+}
+
+.catalog h2 {
+  color: white;
+  margin-top: 50px;
+}
+
+.movies-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  }
+
+.movies-container .movie {
+  display: flex;
+  margin: 10px;
+  -webkit-box-shadow: 1px 5px 15px 2px #000000; 
+  box-shadow: 1px 5px 15px 2px #000000;
+
+  border-radius: 10px;
+  height: 300px;
+  width: 300px;
+  background-size: cover;
+  justify-content: flex-end;
+}
+
+.search-container{
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  justify-content: center;
+  width: 100%;
+}
+
+.movie i{
+  color: white;
+  font-size: 20px;
+  margin: 10px;  
+  text-decoration: none;
+}
+
+.movie-details{
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.movie-details > img{
+  width: 500px;
+}
+
+.movie-details p{
+  width: 500px;
+} 
